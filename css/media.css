@@ -1,0 +1,98 @@
+
+
+
+ /* 
+MEDIA FOR TELEPHONE
+ */
+   /* mobile first  */
+   .container {
+
+       padding-left: 15px;
+       padding-right: 15px;
+
+   }
+
+   @media screen and (min-width:480px) {
+       .container {
+           width: 428px;
+           margin-left: auto;
+           margin-right: auto;
+       }
+   }
+
+   @media screen and (min-width:768px) {
+       .container {
+           width: 720px;
+
+       }
+   }
+
+   @media screen and (min-width:1200px) {
+       .container {
+           width: 1158px;
+
+       }
+   }
+
+   /* mobile-header styles */
+   @media screen and (max-width:767px) {
+       .site-nav {
+           display: none;
+       }
+
+       .contact-nav {
+           display: none;
+       }
+   }
+
+   .main-content {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+   }
+
+   .page-header {
+       padding-top: 24px;
+       padding-bottom: 24px;
+   }
+
+   .mobile-menu-open {
+       background-color: transparent;
+       border: none;
+       padding: 0;
+       height: 22px;
+   }
+
+   /* mobile menu */
+   .mobile-menu-container {
+       position: relative;
+       padding-right: 40px;
+       padding-left: 40px;
+       padding-top: 48px;
+       padding-bottom: 40px;
+   }
+
+   .mobile-menu {
+       position: fixed;
+       width: 100%;
+       height: 100%;
+       display: none;
+       top: 0;
+       left: 0;
+       z-index: 1000;
+       background: #FFFFFF;
+       box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+   }
+
+   .mobile-menu .is-open {}
+
+   .mobile-menu-cloze-btn {
+       position: absolute;
+       top: 15px;
+       right: 15px;
+       background-color: transparent;
+       border: none;
+       padding: 0;
+       line-height: 0;
+   }

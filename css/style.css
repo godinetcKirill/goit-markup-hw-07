@@ -1,0 +1,168 @@
+
+/* #434455;цвет основного текста  */
+/* вторичный цвет текста #2E2F42;*/  
+ /*белый цвет  #FFFFFF;*/ 
+ /* акцент #4D5AE5; */
+ /* вторичный цвет фона #F4F4FD; */
+ /* вторичный цвет фона background: #2E2F42 */
+
+:root{
+    --primary-text-color:#434455;
+    --primary-white-color:#FFFFFF;
+    --title-text-color:#2E2F42;
+    --accent-color:#4D5AE5;
+    --button-bg-color: #404BBF;
+    --portfolio-button:#F4F4FD;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* *::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+font-family: Roboto, serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    letter-spacing: 0.02em;
+     
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+    }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/* базові значення  */
+/* cтилі для хедеру початок сайту(навігація) */
+/* мобільні стилі  */
+
+.container{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.mobile-menu-open{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo-studio {
+    color: var(--title-text-color);
+} 
+
+
+/* стилі для мобільного меню  */
+.mobile-menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.mobile-menu.is-open{
+opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.mobile-cloze-btn-menu{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+.menu-container{
+    position: relative;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width:767px){
+    .site-nav{
+        display: none;
+    }
+       .contact-nav{
+        display: none;
+       }
+}
+
+
+@media screen and (min-width:480px){
+    .container{
+        width:428px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        width: 736px;
+    }
+    .mobile-menu-open{
+        display: none;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1158px;
+
+    }
+}
