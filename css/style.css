@@ -326,7 +326,11 @@ ul {
      max-width: 100%;
      height: auto;
  }
+ .container.our-team{
+    display: block;
+ }
 .section-team{
+
     background-color: var(--portfolio-button);
     padding-top: 96px;
 
@@ -338,10 +342,12 @@ ul {
     text-align: center;
 }
  .tital-descr {
+    font-weight: 400;
+    font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
-     color: var(--paragraph-primary-color);
-     padding-bottom: 72px;
+     color: var(--title-text-color);
+    margin-bottom: 12px;
      text-align: center;
  }
 
@@ -354,31 +360,88 @@ ul {
  }
 
  .team-name{
-     padding-bottom: 8px;
+     
      text-align: center;
      letter-spacing: 0.02em;
      color: #2E2F42;
-     font-weight: 500;
+     font-weight: 600;
      font-size: 20px;
+     line-height: 24px;
      line-height: 1.2;
  }
 
  .team-work{
-     padding-top: 32px;
-     padding-right: 16px;
-     padding-bottom: 32px;
-     padding-left: 16px;
+   padding: 32px 16px;
      text-align: center;
  }
 
+.list-style{
+    margin-bottom: 72px;
+        border-radius: 0px 0px 4px 4px;
+            background-color: var(--primary-bg-color);
+            box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 2px 1px rgb(46 47 66 / 8%);
+        }
+     .list{
+        align-items: center;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+     }   
+     /* Customers section  */
+.customer-logo{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container.customer{
+    display: block;
+}
+.section-do{
+        font-weight: 700;
+            margin-bottom: 72px;
+            font-size: 36px;
+            line-height: 1.11;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: var(--title-text-color);
+}
+.customer-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 16px;
+    row-gap: 72px;
+}
+.customer-link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        color: #8E8F99;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .customer-item{
+        display: flex;
+            width: 104px;
+            height: 56px;
+            fill: currentColor;
+    }
+    
+}
+
+
        
   
-}
+
 
 
 @media screen and (min-width:480px){
     .container{
-        width:428px;
+        width: 426px;
         margin-left: auto;
         margin-right: auto;
         
