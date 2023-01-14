@@ -116,7 +116,7 @@ ul {
                background-color: #FFFFFF;
                top: 0;
                left: 0;
-    
+                   overflow-y: scroll;
                opacity: 0;
                visibility: hidden;
                pointer-events: none;
@@ -196,16 +196,18 @@ ul {
       line-height: 40px;
       letter-spacing: 0.02em;
       padding-bottom: 40px;
-      color: #4D5AE5;
+      color: var(--button-bg-color);
       transition: color 250ms linear, visibility 250ms linear;
       margin-top: 284px;
   }
 
   .contacts-link-mobile {
-    font-size: 20px;
-      margin-top: 40px;
-      color: #434455;
-      text-decoration: none;
+    font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: var(--title-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   /* список логотипів  */
  .social-list-link {
@@ -220,16 +222,18 @@ ul {
 
  }
 
- .actions-list {
-     display: flex;
+ .actions-list-mobile {
+    display: flex;
      list-style: none;
      justify-content: center;
      align-items: center;
-     gap: 24px;
+     
      margin-top: 48px;
+     padding-bottom: 24px;
 
-
-
+ }
+ .actions-list-mobile-li:not(:last-child){
+    margin-right: 56px;
  }
 
  .social-link-item {
