@@ -1351,6 +1351,7 @@ img {
     padding-top: 96px;
     padding-bottom: 96px;
   }
+  
   .container.footer {
     display: flex;
     flex-wrap: wrap;
@@ -1484,6 +1485,7 @@ a.link.current {
 }
 
 .contact-nav {
+    flex-direction: row;
     display: flex;
     margin-left: auto;
 }
