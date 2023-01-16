@@ -260,8 +260,20 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../image/overlay.jpg);
+      url(../image/heromob1x.jpg);
   }
+  @media screen and (min-device-pixel-ratio: 2),
+ screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+   background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../image/heromob2x.jpg);
+  }
+}
   .hero-button {
     background-color: var(--accent-color);
     font-family: Roboto, serif;
@@ -868,8 +880,20 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../image/overlay.jpg);
+      url(../image/herotablet1x.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero{
+   background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../image/hero2xtablet.jpg);
+  }
+}
   .hero-title {
     font-size: 56px;
     width: 496px;
@@ -1543,6 +1567,19 @@ img {
     background-size: cover;
     background-position: center;
   }
+  @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+  .hero {
+     background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../image/people-office\ 2xdesc.jpg);
+  
+    
+  }
+}
 
   .hero {
     padding-top: 192px;
