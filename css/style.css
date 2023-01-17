@@ -1428,7 +1428,7 @@ img {
   .footer-btn {
     margin-left: 24px;
   }
-  .item{
+  .item:not(:last-child){
     margin-bottom: 4px;
   }
 }
