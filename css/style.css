@@ -102,7 +102,6 @@ img {
   .contact-nav {
     display: none;
   }
-  
 
   .mobile-menu {
     position: fixed;
@@ -472,8 +471,7 @@ img {
     padding-bottom: 96px;
   }
 
-  .footer .container{
-   
+  .container.footer {
     display: block;
   }
 
@@ -1391,7 +1389,6 @@ img {
   }
 
   .container.footer {
-   
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -1412,6 +1409,9 @@ img {
   }
   .footer-btn {
     margin-left: 24px;
+  }
+  .item{
+    margin-bottom: 4px;
   }
 }
 
@@ -1440,17 +1440,12 @@ img {
     column-gap: 24px;
     row-gap: 72px;
   }
-  .item{
-    margin-bottom: 4px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container .our-team {
-    width: 1158px;
+  .container {
+    width: 1168px;
   }
-  
-
   .logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
@@ -1607,7 +1602,7 @@ img {
   }
 
   .hero-title {
-    max-width: 496px;
+    max-width: 492px;
     margin: auto;
     margin-top: 0;
     margin-bottom: 48px;
