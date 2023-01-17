@@ -65,7 +65,7 @@ img {
 /* мобільні стилі  */
 
 .container {
-  display: flex;
+ 
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
@@ -348,9 +348,7 @@ img {
     max-width: 100%;
     height: auto;
   }
-  .container.our-team {
-    display: block;
-  }
+  
   .section-team {
     background-color: #f4f4fd;
     padding-top: 96px;
@@ -783,16 +781,26 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
+   
     width: 426px;
     margin-left: auto;
     margin-right: auto;
   }
+  .container.main-content{
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px){
+    .container.main-content{
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 767px;
   }
+
   .mobile-menu-open {
     display: none;
   }
@@ -1446,6 +1454,7 @@ img {
   .container {
     width: 1168px;
   }
+  
   .logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
