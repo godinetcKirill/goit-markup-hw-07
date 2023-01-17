@@ -69,7 +69,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
-  justify-content: space-between;
+ 
 }
 .page-header {
   padding-top: 24px;
@@ -493,6 +493,7 @@ img {
     color: var(--primary-white-color);
   }
   .foot {
+    margin-top: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -788,11 +789,13 @@ img {
   }
   .container.main-content{
     display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 480px){
     .container.main-content{
         display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -1966,7 +1969,6 @@ img {
     display: flex;
   }
   .container-footer {
-    display: flex;
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
