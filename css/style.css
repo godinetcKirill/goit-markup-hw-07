@@ -1962,6 +1962,9 @@ img {
   }
 
   /* футер */
+  .page-foot .container{
+    display: flex;
+  }
   .container-footer {
     display: flex;
     width: 1158px;
