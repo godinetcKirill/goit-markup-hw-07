@@ -329,9 +329,11 @@ img {
     text-align: center;
     margin-bottom: 8px;
   }
-  .adv-li:not-last-child(){
-    margin-bottom: 72px;
+  .adv-li:not(:last-child){
+ margin-bottom: 72px;
   }
+   
+  
   .adv-li {
   
   }
