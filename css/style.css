@@ -102,6 +102,7 @@ img {
   .contact-nav {
     display: none;
   }
+  
 
   .mobile-menu {
     position: fixed;
@@ -184,18 +185,25 @@ img {
     color: var(--accent-color);
   }
   .contacts-link-mobile-tel {
+    text-decoration: none;
     display: block;
     font-weight: 600;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.02em;
-    padding-bottom: 40px;
     color: var(--button-bg-color);
     transition: color 250ms linear, visibility 250ms linear;
+    margin-top: auto;
+  }
+  .link-item-contact {
+    margin-bottom: 48px;
+  }
+  .contact-menu {
     margin-top: 284px;
   }
 
   .contacts-link-mobile {
+    text-decoration: none;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -222,7 +230,6 @@ img {
     align-items: center;
 
     margin-top: 48px;
-    padding-bottom: 24px;
   }
   .actions-list-mobile-li:not(:last-child) {
     margin-right: 56px;
@@ -253,8 +260,6 @@ img {
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
-
-    margin-bottom: 96px;
     min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -311,7 +316,10 @@ img {
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     background-color: #404bbf;
   }
-
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
   .section-title {
     margin: 0;
     font-weight: 700;
@@ -320,8 +328,10 @@ img {
     text-align: center;
     margin-bottom: 8px;
   }
+  .adv-li {
+    margin-bottom: 72px;
+  }
   .section-description {
-    padding-bottom: 72px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -343,8 +353,9 @@ img {
     display: block;
   }
   .section-team {
-    background-color: var(--portfolio-button);
+    background-color: #f4f4fd;
     padding-top: 96px;
+    padding-bottom: 128px;
   }
   .section-title-text {
     font-weight: 700;
@@ -386,12 +397,15 @@ img {
   }
 
   .list-style {
-    margin-bottom: 72px;
     border-radius: 0px 0px 4px 4px;
-    background-color: var(--primary-bg-color);
+    background-color: var(--primary-white-color);
     box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
       0px 2px 1px rgb(46 47 66 / 8%);
   }
+  .list-style:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
   .list {
     align-items: center;
     gap: 24px;
@@ -400,8 +414,8 @@ img {
   }
   /* Customers section  */
   .customer-logo {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .container.customer {
     display: block;
@@ -458,7 +472,8 @@ img {
     padding-bottom: 96px;
   }
 
-  .container.footer {
+  .footer .container{
+   
     display: block;
   }
 
@@ -1376,6 +1391,7 @@ img {
   }
 
   .container.footer {
+   
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -1423,6 +1439,9 @@ img {
   .customer-block {
     column-gap: 24px;
     row-gap: 72px;
+  }
+  .item{
+    margin-bottom: 4px;
   }
 }
 
