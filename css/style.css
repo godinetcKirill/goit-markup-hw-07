@@ -808,7 +808,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 767px;
+    width: 768px;
   }
 
   .mobile-menu-open {
@@ -1609,7 +1609,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../image/people-office\ 2xdesc.jpg);
+        url(../image/people-office\2xdesc.jpg);
     }
   }
 
