@@ -178,7 +178,7 @@ a.link.current {
 
 .contact-nav a {
 
-
+   
     display: flex;
     margin-left: auto;
     color: var(--primary-text-color);
